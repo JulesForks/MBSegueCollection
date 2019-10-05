@@ -102,6 +102,7 @@
         [self.destinationViewController dismissViewControllerAnimated:NO
                                                            completion:completion];
     } else {
+        self.destinationViewController.modalPresentationStyle = UIModalPresentationFullScreen;
         [self.sourceViewController presentViewController:self.destinationViewController
                                                 animated:NO
                                               completion:completion];
